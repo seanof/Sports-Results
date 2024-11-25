@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sports Results</string>
+    <string name="fetch_button_text">Get Latest Results</string>
+    <string name="generic_error_message">An error occurred.</string>
+    <string name="results_timestamp_header">"Latest results for "</string>
+    <string name="tennis_result_formatter">%s: %s wins against %s in %s sets</string>
+    <string name="f1_result_formatter">%s wins %s by %s seconds</string>
+    <string name="nba_result_formatter">%s leads %s to game %s win in the %s against %s</string>
+</resources>
