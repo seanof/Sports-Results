@@ -16,15 +16,18 @@ Beyond the default applied dependencies when starting a new project in Android s
 - testImplementation (libs.mockito.android)
 - testImplementation(libs.kotlinx.coroutines.test) - Enables tests to run on UnconfinedTestDispatcher.
 
-For data/remote directory, I referenced the structure from a personal project (though this is not yet committed to GitHub.)
+For data/remote directory, I referenced the basic structure from a personal project (though this is not yet committed to GitHub.)
 
 #### What portion of the code do you feel is most important for us to review more closely?
 
-- SportsResultsViewModel
-- ApiServiceImpl
-- MainActivity
+- SportsResultsViewModel - for viewmodel implementation.
+- ApiServiceImpl - for Ktor implementation.
+- MainActivity - for UI in Compose.
 
 #### If you were to continue to develop the project, what are things you would add, change, or improve?
 - Add caching + repository pattern for saving data locally to Room database.
 - Espresso or Maestro UI tests.
 - Simplifying/extracting Composables in MainActivity.
+
+### Anything else you want us to know while we review your project?
+- I opted for regular classes over data classes to represent the sports result model(s) in order to keep things simple and readable, and a base open class to allow flattening of the different result types into a single list, and for ease of implementing further types of sports results. 
